@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title> Hello ginger template </title>
+</head>
+
+<body>
+    <h1> Navigation here</h1>
+    <p>Awesome-looking content</p>
+    <ul>
+        <li><a href="{{url_for('index')}}">Tasks</a></li>
+        <li><a href="{{url_for('add')}}">Add New</a></li>
+    </ul>
+
+    {% block main %}
+    {% endblock %}
+
+</body>
+
+</html>
